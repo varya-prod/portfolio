@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#090909" />
+    <meta name="description" content="Варя Лаврова — продюсер постпродакшна в рекламном видеопроизводстве. Проекты, опыт и контакты." />
+    <title>Varya Lavrova — продюсер постпродакшна</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js?v=20261117-access" defer></script>
+  </head>
+  <body class="access-locked">
+    <div class="access-gate" id="access-gate">
+      <form class="access-form" id="access-form">
+        <p class="access-kicker" data-i18n="accessKicker">PRIVATE PORTFOLIO / 2026</p>
+        <h1 data-i18n="accessTitle">ДОСТУП ПО ПАРОЛЮ</h1>
+        <label for="access-password" data-i18n="accessPasswordLabel">Пароль доступа</label>
+        <input id="access-password" name="password" type="password" autocomplete="current-password" required />
+        <button type="submit" data-i18n="accessSubmit">ВОЙТИ ↗</button>
+        <p class="access-message" id="access-message" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header" id="top" inert>
+      <a class="brand magnetic" href="#top" aria-label="Varya Lavrova — на главную" data-i18n-aria="homeAria">VL<span class="brand-star">✳</span></a>
+      <span class="header-note">VARYA LAVROVA<br /><span data-i18n="producer">ПРОДЮСЕР ПОСТПРОДАКШНА</span></span>
+      <div class="header-controls">
+        <button class="language-toggle" type="button" aria-label="Switch to English">
+          <span data-lang-option="ru">RU</span><span class="language-divider">/</span><span data-lang-option="en">EN</span>
+        </button>
+        <button class="menu-toggle magnetic" type="button" aria-expanded="false" aria-controls="site-menu">
+          <span class="menu-toggle-label">МЕНЮ</span>
+          <span class="menu-toggle-icon" aria-hidden="true"><i></i><i></i></span>
+        </button>
+      </div>
+      <nav class="site-menu" id="site-menu" aria-label="Основная навигация" data-i18n-aria="mainNavAria">
+        <a href="#about"><sup>01</sup> <span data-i18n="navAbout">ОБО МНЕ</span></a>
+        <a href="#work"><sup>02</sup> <span data-i18n="navProjects">ПРОЕКТЫ</span></a>
+        <a href="#contact"><sup>03</sup> <span data-i18n="navContacts">КОНТАКТЫ</span></a>
+      </nav>
+    </header>
+
+    <main inert>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
+          <div class="hero-core"></div>
+          <div class="hero-flash"></div>
+          <video class="hero-video" muted loop playsinline preload="none" aria-hidden="true"></video>
+          <img class="hero-illustration" alt="" hidden />
+        </div>
+        <div class="hero-topline"><span>VARYA LAVROVA / PORTFOLIO 2026</span><span data-i18n="heroTopline">БЮДЖЕТ / КОМАНДА / ФИНАЛ</span></div>
+        <div class="hero-content">
+          <p class="eyebrow reveal" data-i18n="heroEyebrow">ПРОДЮСЕР ПОСТПРОДАКШНА</p>
+          <h1 id="hero-title" class="hero-title reveal">VARYA<br /><em>LAVROVA</em><span class="title-dot">✳</span></h1>
+          <div class="hero-bottom reveal">
+            <p data-i18n="heroDescription">Организую постпродакшн рекламных роликов: бюджет, сроки, команда и финальная сдача.</p>
+            <a class="round-link magnetic" href="#showreel" aria-label="К шоурилу" data-i18n-aria="showreelLinkAria"><span>↓</span></a>
+          </div>
+        </div>
+        <div class="hero-index"><span data-i18n="scrollExplore">ЛИСТАЙТЕ ДАЛЬШЕ</span> <span>↓</span></div>
+      </section>
+
+      <!-- <section class="showreel section-pad" id="showreel" aria-labelledby="showreel-title">
+        <div class="section-kicker reveal"><span data-i18n="reelKicker">01 / SHOWREEL</span><span data-i18n="reelTagline">РЕКЛАМНЫЕ ПРОЕКТЫ С МОИМ УЧАСТИЕМ</span></div>
+        <div class="showreel-heading reveal"><h2 id="showreel-title">SHOW<span>REEL</span></h2><span class="asterisk">✳</span></div>
+        <div class="showreel-frame reveal">
+          <div class="reel-art" aria-hidden="true"><span class="reel-ring"></span><span class="reel-mark">VL✳</span><span class="reel-scan"></span></div>
+          <video id="showreel-video" controls playsinline preload="none" aria-label="Шоурил" data-i18n-aria="reelAria"></video>
+          <div class="reel-placeholder"><span>SHOWREEL / VARYA LAVROVA</span><strong data-i18n="reelSoon">ПРОЕКТЫ В КАДРЕ</strong><small data-i18n="reelPlaceholder">Подборка работ, в производстве которых я участвовала</small></div>
+          <button class="reel-play magnetic" type="button" aria-label="Воспроизвести шоурил" data-i18n-aria="reelPlayAria" hidden>↗</button>
+          <div class="frame-caption"><span>SELECTED WORK / VARYA LAVROVA</span><span data-i18n="reelCaption">РЕКЛАМА / ПОСТПРОДАКШН</span></div>
+        </div>
+      </section> -->
+
+      <section class="intro section-pad" id="about" aria-labelledby="about-title">
+        <img class="intro-illustration" alt="" loading="lazy" hidden />
+        <div class="section-kicker reveal"><span data-i18n="aboutKicker">02 / ПОДХОД</span><span data-i18n="aboutTagline">ОТ МАТЕРИАЛОВ ДО ФИНАЛЬНОГО МАСТЕРА</span></div>
+        <div class="intro-grid">
+          <p class="intro-side reveal" data-i18n="aboutSide">ПОСТПРОДАКШН-ПРОДЮСЕР / УПРАВЛЕНИЕ ПРОЕКТАМИ / ОКОЛО 70 ПРОЕКТОВ</p>
+          <div>
+            <h2 id="about-title" class="intro-statement reveal"><span class="intro-strong" data-i18n="aboutTitleA">ПОСТПРОДАКШН —</span> <span class="intro-muted" data-i18n="aboutTitleB">УПРАВЛЯЕМЫЙ ПРОЦЕСС.</span></h2>
+            <div class="intro-copy reveal">
+              <div class="intro-photo-frame">
+                <img class="intro-copy-photo" src="./assets/photo/varya.png" alt="Varya Lavrova" loading="lazy" decoding="async" />
+                <span class="intro-photo-caption">VARYA LAVROVA / POST-PRODUCTION</span>
+              </div>
+              <div class="intro-copy-columns">
+                <div class="intro-copy-item">
+                  <h3 data-i18n="aboutCopyTitle">Продюсирование постпродакшена рекламных проектов</h3>
+                  <p data-i18n="aboutCopy">Управление производственным циклом, бюджетами, графиками, внешними исполнителями и коммуникацией между клиентом, агентством и производственными командами.</p>
+                </div>
+                <div class="intro-copy-item">
+                  <h3 data-i18n="aboutStatsTitle">60+ COMMERCIAL PROJECTS</h3>
+                  <p data-i18n="aboutStatsCopy">Более 60 рекламных проектов за 1,5 года работы в RE:Studio. Опыт ведения нескольких производственных процессов и проектов, до 13 проектов параллельно.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ticker" aria-hidden="true"><div data-i18n="ticker">БЮДЖЕТ ✳ ГРАФИК ✳ КОМАНДА ✳ ФИНАЛ ✳ БЮДЖЕТ ✳ ГРАФИК ✳ КОМАНДА ✳ ФИНАЛ ✳</div></div>
+      </section>
+
+      <section class="work section-pad" id="work" aria-labelledby="work-title">
+        <div class="section-kicker reveal"><span data-i18n="workKicker">03 / ПРОЕКТЫ</span><span data-i18n="workTagline">РЕКЛАМНОЕ ВИДЕОПРОИЗВОДСТВО</span></div>
+        <div class="work-heading reveal"><h2 id="work-title"><span class="work-title-label" data-i18n="workTitle">ПРОЕКТЫ</span><span class="work-count"></span></h2><p data-i18n="workCopy">Три проекта с моим участием получили награды фестиваля «Белый квадрат».</p></div>
+        <div class="filters" role="group" aria-label="Фильтр проектов" data-i18n-aria="filterAria">
+          <button type="button" class="filter is-active" data-filter="all" aria-pressed="true"><span data-i18n="filterAll">ВСЕ</span> <sup></sup></button>
+          <button type="button" class="filter" data-filter="festival" aria-pressed="false"><span data-i18n="filterFestival">СПЕЦПРОЕКТЫ</span> <sup></sup></button>
+          <button type="button" class="filter" data-filter="federal" aria-pressed="false"><span data-i18n="filterFederal">ТВ И DIGITAL</span> <sup></sup></button>
+          <button type="button" class="filter" data-filter="assistant" aria-pressed="false"><span data-i18n="filterAssistant">КАМПАНИИ И СЕРИИ</span> <sup></sup></button>
+        </div>
+        <div class="project-groups" id="project-grid"></div>
+      </section>
+
+      <section class="services section-pad" aria-labelledby="services-title">
+        <div class="section-kicker reveal"><span data-i18n="servicesKicker">04 / ЧТО Я ДЕЛАЮ</span><span data-i18n="servicesTagline">БЮДЖЕТ, КОМАНДА, СДАЧА</span></div>
+        <h2 id="services-title" class="services-title reveal"><span data-i18n="servicesTitleA">ОТ МАТЕРИАЛОВ</span><br /><em data-i18n="servicesTitleB">ДО МАСТЕРА.</em></h2>
+        <div class="service-list">
+          <div class="service-row reveal"><span>01</span><h3 data-i18n="serviceCreative">ПРОДЮСИРОВАНИЕ ПОСТПРОДАКШНА</h3><p data-i18n="serviceCreativeCopy">Расчёт бюджета, график и организация этапов работы</p><b>↗</b></div>
+          <div class="service-row reveal"><span>02</span><h3 data-i18n="serviceProduction">КООРДИНАЦИЯ КОМАНДЫ</h3><p data-i18n="serviceProductionCopy">Подбор специалистов, постановка задач и контроль сроков</p><b>↗</b></div>
+          <div class="service-row reveal"><span>03</span><h3 data-i18n="servicePost">УПРАВЛЕНИЕ ПРОЕКТОМ</h3><p data-i18n="servicePostCopy">Клиент, согласования, контроль качества и финальная сдача</p><b>↗</b></div>
+        </div>
+      </section>
+
+      <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
+        <img class="contact-illustration" alt="" loading="lazy" hidden />
+        <div class="section-kicker reveal"><span data-i18n="contactKicker">05 / НА СВЯЗИ</span><span data-i18n="contactTagline">ДЛЯ АГЕНТСТВ, СТУДИЙ И РАБОТОДАТЕЛЕЙ</span></div>
+        <p class="contact-lead reveal"><span data-i18n="contactLeadA">ОТКРЫТА К ПРОЕКТАМ</span> <span data-i18n="contactLeadB">И ПРЕДЛОЖЕНИЯМ О РАБОТЕ.</span></p>
+        <h2 id="contact-title" class="reveal"><a href="mailto:varlavroprod1712@gmail.com" data-cursor="WRITE"><span data-i18n="contactTitleA">ДАВАЙТЕ</span><br /><em data-i18n="contactTitleB">ОБСУДИМ</em><br /><span data-i18n="contactTitleC">ПРОЕКТ</span><span class="contact-arrow">↗</span></a></h2>
+        <div class="contact-bottom"><p data-i18n="emailNote">ПРОЕКТЫ, СОТРУДНИЧЕСТВО И ПОСТОЯННАЯ РАБОТА</p><a href="mailto:varlavroprod1712@gmail.com">VARLAVROPROD1712@GMAIL.COM ↗</a></div>
+      </section>
+    </main>
+
+    <footer class="site-footer" inert><span>© 2026 / VARYA LAVROVA</span><a href="#top" data-i18n="backToTop">НАВЕРХ ↑</a><span data-i18n="footerNote">СДЕЛАНО С ВНИМАНИЕМ К ДЕТАЛЯМ</span></footer>
+
+    <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+      <button type="button" class="dialog-close" aria-label="Закрыть" data-i18n-aria="closeAria" data-i18n="closeButton">ЗАКРЫТЬ ✕</button>
+      <div class="dialog-art"><video class="dialog-video" controls playsinline preload="none" hidden></video></div>
+      <div class="dialog-body"><span class="dialog-meta"></span><h2 id="dialog-title"></h2><p class="dialog-description"></p><div class="dialog-facts"></div><a class="dialog-link" href="#" target="_blank" rel="noopener noreferrer" data-i18n="watchVideo" hidden>СМОТРЕТЬ РОЛИК ↗</a><a class="dialog-source-link" href="#" target="_blank" rel="noopener noreferrer" data-i18n="cannesCase" hidden>КАРТОЧКА CANNES LIONS ↗</a></div>
+    </dialog>
+  </body>
+</html>
