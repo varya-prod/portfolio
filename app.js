@@ -495,7 +495,7 @@ function renderProjects() {
       if (project.award) {
         const badge = document.createElement('span');
         badge.className = 'project-award';
-        badge.textContent = `${project.award} ✳`;
+        badge.append(document.createTextNode(`${project.award} `), createStarIcon('project-award-star'));
         visual.append(badge);
       }
 
@@ -647,12 +647,34 @@ function openProject(project) {
   }
 }
 
+function createStarIcon(className) {
+  const star = document.createElement('img');
+  star.className = className;
+  star.src = './assets/star.svg';
+  star.alt = '';
+  star.setAttribute('aria-hidden', 'true');
+  return star;
+}
+
+function renderTextWithStars(element, text, className) {
+  element.replaceChildren();
+  text.split('✳').forEach((part, index, parts) => {
+    element.append(document.createTextNode(part));
+    if (index < parts.length - 1) element.append(createStarIcon(className));
+  });
+}
+
 function applyLanguage() {
   document.documentElement.lang = language;
   document.title = t('pageTitle');
   document.querySelector('meta[name="description"]').content = t('pageDescription');
   document.querySelectorAll('[data-i18n]').forEach((element) => {
-    element.textContent = t(element.dataset.i18n);
+    const text = t(element.dataset.i18n);
+    if (element.dataset.i18n === 'ticker') {
+      renderTextWithStars(element, text, 'ticker-star');
+    } else {
+      element.textContent = text;
+    }
   });
   document.querySelectorAll('[data-i18n-aria]').forEach((element) => {
     element.setAttribute('aria-label', t(element.dataset.i18nAria));
