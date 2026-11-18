@@ -130,9 +130,9 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--pink);outline-offse
 .intro-statement .intro-muted{color:#777874}
 .work-heading h2 .work-title-label{font-size:inherit;letter-spacing:inherit;vertical-align:baseline;margin:0;color:inherit}
 .work-heading h2 .work-count{font-size:20px;letter-spacing:-.05em;vertical-align:top;margin-left:10px;color:var(--pink)}
-.svg-arrow{width:.9em;height:.9em;display:inline-block;object-fit:contain;flex:none;vertical-align:-.08em}
-.arrow-down{transform:rotate(135deg)}
-.arrow-up{transform:rotate(-45deg)}
+.svg-arrow{width:.9em;height:.9em;display:inline-block;object-fit:contain;flex:none;vertical-align:-.08em;background:currentColor;-webkit-mask:url("./assets/arrow.svg") center/contain no-repeat;mask:url("./assets/arrow.svg") center/contain no-repeat}
+.arrow-down{transform:rotate(90deg)}
+.arrow-up{transform:rotate(-90deg)}
 .round-link .svg-arrow{width:24px;height:24px}
 .hero-index .svg-arrow{width:16px;height:16px;margin:15px 0 0}
 .service-row>.svg-arrow{justify-self:end;width:28px;height:28px}
@@ -140,6 +140,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--pink);outline-offse
 .contact-arrow{width:.7em;height:.7em;margin-left:.2em;transition:transform .25s}
 .contact h2 a>.contact-arrow{width:.7em;height:.7em;vertical-align:.02em}
 .contact h2 a:hover>.contact-arrow{transform:translate(14px,-14px)}
+.contact-bottom a .svg-arrow{color:var(--pink)}
 .contact-bottom a .svg-arrow,.site-footer a .svg-arrow,.dialog-link .svg-arrow,.dialog-source-link .svg-arrow{width:1em;height:1em;margin-left:.25em}
 .contact h2 a>span:not(.contact-arrow){color:inherit;font-size:inherit;vertical-align:baseline;margin:0;display:inline;transition:none}
 .contact h2 a>.contact-arrow{color:var(--pink);font-size:.7em;vertical-align:top;margin-left:.2em;display:inline-block;transition:transform .25s}

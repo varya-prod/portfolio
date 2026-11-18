@@ -465,7 +465,7 @@ function renderProjects() {
       index.textContent = `${project.id} / ${group.label[language]}`;
       const corner = document.createElement('span');
       corner.className = 'project-corner';
-      corner.innerHTML = '<img class="svg-arrow" src="./assets/arrow.svg" alt="" aria-hidden="true">';
+      corner.innerHTML = '<span class="svg-arrow" aria-hidden="true"></span>';
       visual.append(art);
       if (project.thumbnailUrl) {
         const thumbnail = document.createElement('img');
