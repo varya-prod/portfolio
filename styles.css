@@ -28,7 +28,8 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--pink);outline-offse
 .access-form label{font-size:11px;letter-spacing:.1em;margin-bottom:10px}
 .access-form input{width:100%;padding:14px 0;border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;color:var(--fg);font:inherit;font-size:18px}
 .access-form input:focus-visible{outline:2px solid var(--pink);outline-offset:5px}
-.access-form button{align-self:flex-start;margin-top:26px;padding:13px 20px;border:1px solid var(--fg);border-radius:30px;background:transparent;color:var(--fg);font-size:10px;font-weight:800;letter-spacing:.12em}
+.access-form button{align-self:flex-start;margin-top:26px;padding:13px 20px;border:1px solid var(--fg);border-radius:30px;background:transparent;color:var(--fg);font-size:10px;font-weight:800;letter-spacing:.12em;display:flex;align-items:center;gap:8px}
+.access-form button .svg-arrow{width:16px;height:16px}
 .access-message{min-height:20px;margin-top:18px;color:var(--pink);font-size:12px}
 .site-header{position:fixed;z-index:80;top:0;left:0;width:100%;height:96px;display:flex;align-items:center;padding:0 var(--page);gap:32px}
 .brand{font-size:38px;letter-spacing:-.16em;font-weight:800;line-height:1}.brand-star{display:inline-block;width:.76em;height:.76em;vertical-align:.16em;letter-spacing:0;margin-left:.13em}
@@ -129,6 +130,17 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--pink);outline-offse
 .intro-statement .intro-muted{color:#777874}
 .work-heading h2 .work-title-label{font-size:inherit;letter-spacing:inherit;vertical-align:baseline;margin:0;color:inherit}
 .work-heading h2 .work-count{font-size:20px;letter-spacing:-.05em;vertical-align:top;margin-left:10px;color:var(--pink)}
+.svg-arrow{width:.9em;height:.9em;display:inline-block;object-fit:contain;flex:none;vertical-align:-.08em}
+.arrow-down{transform:rotate(135deg)}
+.arrow-up{transform:rotate(-45deg)}
+.round-link .svg-arrow{width:24px;height:24px}
+.hero-index .svg-arrow{width:16px;height:16px;margin:15px 0 0}
+.service-row>.svg-arrow{justify-self:end;width:28px;height:28px}
+.reel-play .svg-arrow{width:36px;height:36px;filter:brightness(0)}
+.contact-arrow{width:.7em;height:.7em;margin-left:.2em;transition:transform .25s}
+.contact h2 a>.contact-arrow{width:.7em;height:.7em;vertical-align:.02em}
+.contact h2 a:hover>.contact-arrow{transform:translate(14px,-14px)}
+.contact-bottom a .svg-arrow,.site-footer a .svg-arrow,.dialog-link .svg-arrow,.dialog-source-link .svg-arrow{width:1em;height:1em;margin-left:.25em}
 .contact h2 a>span:not(.contact-arrow){color:inherit;font-size:inherit;vertical-align:baseline;margin:0;display:inline;transition:none}
 .contact h2 a>.contact-arrow{color:var(--pink);font-size:.7em;vertical-align:top;margin-left:.2em;display:inline-block;transition:transform .25s}
 .contact h2 a:hover>span:not(.contact-arrow){transform:none}
