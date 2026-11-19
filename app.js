@@ -24,29 +24,29 @@ const projectGroups = [
     label: { ru: 'СПЕЦПРОЕКТЫ', en: 'SPECIAL PROJECTS' },
     projects: [
       { file: 'Здесь_будет_свет_Tele2_Родная_Речь.mp4', title: { ru: 'Здесь будет свет', en: 'There Will Be Light' }, client: { ru: 'Tele2 Kazakhstan', en: 'Tele2 Kazakhstan' }, year: '2026', format: { ru: 'Рекламный ролик', en: 'Advertising film' }, role: { ru: 'Продюсер постпродакшна', en: 'Post-production Producer' }, scope: { ru: 'Организация постпродакшна и координация команды из семи специалистов.', en: 'Managed the post-production workflow and coordinated a team of seven specialists.' }, collaborators: { ru: 'Совместно с CCO «Родной речи» Ильёй Прямиловым и исполнительными креативными директорами Михаилом Кудашкиным и Александром Мерзляковым.', en: 'In collaboration with Rodnaya Rech CCO Ilya Pryamilov and executive creative directors Mikhail Kudashkin and Alexander Merzlyakov.' }, award: 'CANNES LIONS / SHORTLIST', recognition: { ru: 'Cannes Lions 2026 — шорт-лист, PR / PR: Sectors; Red Apple 2026 — Гран-при в категории «Медиа»', en: 'Cannes Lions 2026 — shortlist, PR / PR: Sectors; Red Apple 2026 — Grand Prix in Media' }, sourceUrl: 'https://www.lovethework.com/en/work/entries/highlighted-by-data-787224', url: 'https://www.youtube.com/watch?v=NRqtUq1BRa4', embedUrl: 'https://www.youtube.com/embed/NRqtUq1BRa4?si=2cvAfECe3oCpYfTT&autoplay=1&mute=1&playsinline=1&rel=0', thumbnailUrl: 'https://img.youtube.com/vi/NRqtUq1BRa4/maxresdefault.jpg', thumbnailFallbackUrl: 'https://img.youtube.com/vi/NRqtUq1BRa4/hqdefault.jpg', description: { ru: 'Данные мобильной сети помогли определить городские места, которым не хватает освещения.', en: 'Mobile network data helped identify city areas in need of better lighting.' } },
-      { file: 'vtb.mp4', title: { ru: 'ВТБ / Манифест', en: 'VTB / Manifesto' }, client: { ru: 'ВТБ', en: 'VTB' }, year: '2025', format: { ru: 'Рекламная компания', en: 'Campaign' }, role: { ru: 'Продюсер постпродакшна', en: 'Post-production Producer' }, scope: { ru: 'Координация постпродакшена имиджевого ролика для рекламной кампании ВТБ. Организация работы 2D-специалистов, монтажного и sound design-направлений. Адаптация производственного процесса меняющимся брифу, исходникам и тд.', en: 'Coordinated post-production for a VTB brand film, organizing the 2D, editing, and sound design teams. Adapted the production workflow to evolving briefs, source materials, and other changing requirements.' }, collaborators: { ru: 'Совместно с CCO «Родной речи» Ильёй Прямиловым.', en: 'In collaboration with Rodnaya Rech CCO Ilya Pryamilov.' }, description: { ru: 'Ролик создан для рекламной компании, был презентован лично президенту банка и получил максимально положительный отзыв.', en: 'Created for a VTB advertising campaign, the film was presented personally to the bank’s president and received very positive feedback.' } },
-      { file: 'psb.mp4', title: { ru: 'ПСБ', en: 'PSB' }, client: { ru: 'ПСБ Банк', en: 'PSB Bank' }, year: '2026', format: { ru: 'Фестивальный рекламный кейс', en: 'Advertising case film for festival submissions' }, role: { ru: 'Продюсер постпродакшна со стороны агентства', en: 'Agency-side Post-production Producer' }, scope: { ru: 'Контроль внесения правок от креатива и Клиента, проверка финальных материалов на соответствие согласованным комментариям, ведение рабочей коммуникации с продакшеном Papation, контроль вносимых правок на соответствие брифу.', en: 'Oversaw revisions requested by the creative team and the client, checked final materials against the approved feedback, managed day-to-day communication with Papation production, and ensured revisions stayed aligned with the brief.' } },
+      { file: 'vtb.mp4', title: { ru: 'ВТБ / Манифест', en: 'VTB / Manifesto' }, client: { ru: 'ВТБ', en: 'VTB' }, year: '2025', format: { ru: 'Рекламная компания', en: 'Campaign' }, role: { ru: 'Продюсер постпродакшна', en: 'Post-production Producer' }, scope: { ru: 'Координация постпродакшена имиджевого ролика для рекламной кампании ВТБ. Организация работы 2D-специалистов, монтажного и sound design-направлений. Адаптация производственного процесса в соответствии меняющемуся брифу, исходникам.', en: 'Coordinated post-production for a VTB brand film, organizing the 2D, editing, and sound design teams. Adapted the production workflow to evolving briefs, source materials, and other changing requirements.' }, collaborators: { ru: 'Совместно с CCO «Родной речи» Ильёй Прямиловым.', en: 'In collaboration with Rodnaya Rech CCO Ilya Pryamilov.' }, description: { ru: 'Ролик создан для рекламной компании, был презентован лично президенту банка и получил максимально положительный отзыв.', en: 'Created for a VTB advertising campaign, the film was presented personally to the bank’s president and received very positive feedback.' } },
+      { file: 'psb.mp4', title: { ru: 'ПСБ', en: 'PSB' }, client: { ru: 'ПСБ Банк', en: 'PSB Bank' }, year: '2026', format: { ru: 'Фестивальный рекламный кейс', en: 'Advertising case film for festival submissions' }, role: { ru: 'Продюсер постпродакшна со стороны агентства', en: 'Agency-side Post-production Producer' }, scope: { ru: 'Контроль внесения правок от креатива и Клиента, проверка финальных материалов на соответствие согласованным комментариям, ведение рабочей коммуникации с продакшеном Papaton, контроль вносимых правок на соответствие брифу.', en: 'Oversaw revisions requested by the creative team and the client, checked final materials against the approved feedback, managed day-to-day communication with Papation production, and ensured revisions stayed aligned with the brief.' } },
     ]
   },
   {
     id: 'federal', folder: 'DIGITAL_TV_POST',
     label: { ru: 'ТВ И DIGITAL', en: 'TV & DIGITAL' },
     projects: [
-      { file: 'maggi.mp4', title: { ru: 'Maggi / Papyrus', en: 'Maggi / Papyrus' }, client: { ru: 'Бренд «Магги»', en: 'Maggi' }, role: { ru: 'Project Manager', en: 'Project Manager' }, scope: { ru: 'Ведение коммуникации с бренд-менеджером Клиента, аккаунт-менеджером и креативной командой. Контроль правок продюсера на соответствие брифу, согласованному Клиентом. Контроль сроков производства и тайм-менеджмент.', en: 'Managed communication with the client’s brand manager, account manager and creative team. Ensured the producer’s revisions aligned with the client-approved brief, and managed production schedules and timelines.' } },
-      { file: 'vit.mp4', title: { ru: ' ВИТ "Устойчивый успех"', en: 'VIT / Sustainable Success' }, client: { ru: 'Вкусно и Точка', en: 'Vkusno & Tochka' }, brand: { ru: 'ВИТ', en: 'VIT' }, role: { ru: 'Продюсер постпродакшна', en: 'Post-production Producer' }, scope: { ru: 'координировала работу монтажера и озвучку кейса с звуковой студией ДТВ продакшен ', en: 'Coordinated the editor’s work and the case film’s voice-over with DTV Production sound studio.' }, format: { ru: 'Фестивальный рекламный кейс для Red Apple', en: 'Advertising case film for the Red Apple festival' }},
-      { file: 'nescafe.mp4', title: { ru: 'Nescafé 3in1', en: 'Nescafé 3in1' }, client: { ru: 'Nestlé', en: 'Nestlé' }, brand: { ru: 'Nescafé', en: 'Nescafé' }, role: { ru: 'Продюсер постпродакшна', en: 'Post-production Producer' }, scope: { ru: 'Ведение коммуникации с бренд-менеджером Клиента, аккаунт-менеджером и креативной командой. Контроль правок продюсера на соответствие брифу, согласованному Клиентом и креативной командой. Контроль сроков производства и тайм-менеджмент.', en: 'Managed communication with the client’s brand manager, account manager and creative team. Ensured the producer’s revisions aligned with the brief approved by the client and creative team, and managed production schedules and timelines.' } },
+      { file: 'maggi.mp4', title: { ru: 'Maggi / Papyrus', en: 'Maggi / Papyrus' }, client: { ru: 'Бренд «Магги»', en: 'Maggi' }, role: { ru: 'Project Manager', en: 'Project Manager' }, scope: { ru: 'Продюсирование проекта при учащенном изменении исходников и брифа: оперативная перестройка продакшн процесса и координация команды до финальной сдачи ролика по ТТ.', en: 'Managed communication with the client’s brand manager, account manager and creative team. Ensured the producer’s revisions aligned with the client-approved brief, and managed production schedules and timelines.' } },
+      { file: 'vit.mp4', title: { ru: ' ВИТ "Устойчивый успех"', en: 'VIT / Sustainable Success' }, client: { ru: 'Вкусно и Точка', en: 'Vkusno & Tochka' }, brand: { ru: 'ВИТ', en: 'VIT' }, role: { ru: 'Продюсер постпродакшна', en: 'Post-production Producer' }, scope: { ru: 'Координация работы монтажера и саунд продюсера, подготовка кейса по фестивальным стандартам ', en: 'Coordinated the editor’s work and the case film’s voice-over with DTV Production sound studio.' }, format: { ru: 'Фестивальный рекламный кейс для Red Apple', en: 'Advertising case film for the Red Apple festival' }},
+      { file: 'nescafe.mp4', title: { ru: 'Nescafé 3in1', en: 'Nescafé 3in1' }, client: { ru: 'Nestlé', en: 'Nestlé' }, brand: { ru: 'Nescafé', en: 'Nescafé' }, role: { ru: 'Проджект менеджер', en: 'Post-production Producer' }, scope: { ru: 'Ведение коммуникации с бренд-менеджером Клиента, аккаунт-менеджером и креативной командой. Координация продакшен команды контроль правок на соответствие брифу, согласованному Клиентом и креативной командой. Тайм менеджмент.', en: 'Managed communication with the client’s brand manager, account manager and creative team. Ensured the producer’s revisions aligned with the brief approved by the client and creative team, and managed production schedules and timelines.' } },
       { file: 'nan.mp4', title: { ru: 'NAN 3 Optipro', en: 'NAN 3 Optipro' }, client: { ru: 'Nestlé', en: 'Nestlé' }, brand: { ru: 'NAN', en: 'NAN' }, role: { ru: 'Продюсер постпродакшна', en: 'Post-production Producer' }, scope: { ru: 'Ведение постпродакшна, брифинг специалистов и постановка задач. Контроль правок на соответствие согласованному брифу.', en: 'Managed post-production, briefed specialists and assigned tasks. Ensured revisions aligned with the approved brief.' } },
-      { file: 'nestlé.mp4', title: { ru: 'Nestlé / Хрутка', en: 'Nestlé / Khrutka' }, role: { ru: 'Project Manager', en: 'Project Manager' }, client: { ru: 'Nestlé', en: 'Nestlé' }, brand: { ru: 'Хрутка', en: 'Khrutka' }, scope: { ru: 'Ведение коммуникации с бренд-менеджером, аккаунт-менеджером и креативом. Брифинг дизайнера на подготовку раскадровки по ТТ. Контроль правок продюсера на соответствие брифу, согласованному Клиентом и креативом. Контроль сроков производства и тайм-менеджмент.', en: 'Managed communication with the brand manager, account manager and creative team. Briefed the designer to prepare a storyboard based on the technical requirements. Ensured the producer’s revisions aligned with the brief approved by the client and creative team, and managed production schedules and timelines.' } },
-      { file: 'komilfo.mp4', title: { ru: 'Комильфо', en: 'Komilfo' }, client: { ru: 'Nestlé', en: 'Nestlé' }, brand: { ru: 'Комильфо', en: 'Komilfo' }, role: { ru: 'Project Manager', en: 'Project Manager' }, scope: { ru: 'Ведение коммуникации с бренд-менеджером, аккаунт-менеджером и креативом. Контроль правок продюсера на соответствие брифу, согласованному Клиентом и креативом. Контроль сроков производства и тайм-менеджмент. ', en: 'Managed communication with the brand manager, account manager and creative team. Ensured the producer’s revisions aligned with the brief approved by the client and creative team, and managed production schedules and timelines.' } },
+      { file: 'nestlé.mp4', title: { ru: 'Nestlé / Хрутка', en: 'Nestlé / Khrutka' }, role: { ru: 'Project Manager', en: 'Project Manager' }, client: { ru: 'Nestlé', en: 'Nestlé' }, brand: { ru: 'Хрутка', en: 'Khrutka' }, scope: { ru: 'Полное управление производственным циклом, ведение прямой коммуникации с бренд командой и креативом: перевод комментариев клиента в четкие ТЗ и контроль качества правок на всех этапах согласования. Контроль сроков производства и тайм-менеджмент.', en: 'Managed communication with the brand manager, account manager and creative team. Briefed the designer to prepare a storyboard based on the technical requirements. Ensured the producer’s revisions aligned with the brief approved by the client and creative team, and managed production schedules and timelines.' } },
+      { file: 'komilfo.mp4', title: { ru: 'Комильфо', en: 'Komilfo' }, client: { ru: 'Nestlé', en: 'Nestlé' }, brand: { ru: 'Комильфо', en: 'Komilfo' }, role: { ru: 'Project Manager', en: 'Project Manager' }, scope: { ru: 'Управление сметой и таймингом, оптимизация производственных ресурсов продакшена и контроль соблюдения гайдов Клиента ', en: 'Managed communication with the brand manager, account manager and creative team. Ensured the producer’s revisions aligned with the brief approved by the client and creative team, and managed production schedules and timelines.' } },
     ]
   },
   {
     id: 'assistant', folder: 'PROD ASSISTANT',
     label: { ru: 'КАМПАНИИ И СЕРИИ', en: 'CAMPAIGNS & SERIES' },
     projects: [
-      { file: 'ViT_RailwayStation.mp4', title: { ru: 'Вкусно и Точка / Вокзал', en: 'ViT / Railway Station' }, client: { ru: 'Вкусно и Точка', en: 'Vkusno & Tochka' }, format: { ru: 'Рекламный ролик', en: 'Advertising film' }, role: { ru: 'Ассистент продюсера', en: "Producer's Assistant" } },
+      { file: 'ViT_RailwayStation.mp4', title: { ru: 'Вкусно и Точка / Вокзал', en: 'ViT / Railway Station' }, client: { ru: 'Вкусно и Точка', en: 'Vkusno & Tochka' }, format: { ru: 'Рекламный ролик', en: 'Advertising film' }, role: { ru: 'Production Assistant', en: "Producer's Assistant" } },
       { file: 'ViT_Mama.mp4', title: { ru: 'Вкусно и Точка / Мама', en: 'VIT / Mom' }, client: { ru: 'Вкусно и Точка', en: 'Vkusno & Tochka' }, format: { ru: 'Благотворительный рекламный ролик', en: 'Charity advertising film' }, role: { ru: 'Ассистент по актёрам', en: 'Talent Assistant' } },
-      { file: 'ViT_Papa.mp4', title: { ru: 'Вкусно и Точка / Папа', en: 'VIT / Dad' }, client: { ru: 'Вкусно и Точка', en: 'Vkusno & Tochka' }, format: { ru: 'Благотворительный рекламный ролик', en: 'Charity advertising film' }, role: { ru: 'Ассистент по актёрам', en: 'Talent Assistant' } },
+      { file: 'ViT_Papa.mp4', title: { ru: 'Вкусно и Точка / Папа', en: 'VIT / Dad' }, client: { ru: 'Вкусно и Точка', en: 'Vkusno & Tochka' }, format: { ru: 'Благотворительный рекламный ролик', en: 'Charity advertising film' }, role: { ru: 'Talent Assistant', en: 'Talent Assistant' } },
       { file: 'Yubileynoye_Train.mp4', title: { ru: 'Юбилейное / В поезде', en: 'Yubileynoye / On the Train' }, client: { ru: 'Юбилейное', en: 'Yubileynoye' }, format: { ru: 'Рекламный ролик «Все мы из одного теста»', en: 'Advertising film: “We’re all cut from the same dough”' }, role: { ru: 'Ассистент продюсера', en: "Producer's Assistant" } },
       { file: 'Yubileynoye_Kitchen.mp4', title: { ru: 'Юбилейное / На кухне', en: 'Yubileynoye / In the Kitchen' }, client: { ru: 'Юбилейное', en: 'Yubileynoye' }, format: { ru: 'Рекламный ролик «Все мы из одного теста»', en: 'Advertising film: “We’re all cut from the same dough”' }, role: { ru: 'Ассистент продюсера', en: "Producer's Assistant" } },
       { file: 'Yubileynoye_Crossing.mp4', title: { ru: 'Юбилейное / На переезде', en: 'Yubileynoye / At the Crossing' }, client: { ru: 'Юбилейное', en: 'Yubileynoye' }, format: { ru: 'Рекламный ролик «Все мы из одного теста»', en: 'Advertising film: “We’re all cut from the same dough”' }, role: { ru: 'Ассистент продюсера', en: "Producer's Assistant" } }
@@ -55,13 +55,17 @@ const projectGroups = [
 ];
 
 let projectNumber = 0;
-const projects = projectGroups.flatMap((group) => group.projects.map((project) => ({
-  ...project,
-  id: String(++projectNumber).padStart(2, '0'),
-  category: group.id,
-  categoryName: group.label,
-  video: `./assets/video/${encodeURIComponent(group.folder)}/${encodeURIComponent(project.file)}`
-})));
+const projects = projectGroups.flatMap((group) => group.projects.map((project) => {
+  const id = String(++projectNumber).padStart(2, '0');
+  return {
+    ...project,
+    id,
+    category: group.id,
+    categoryName: group.label,
+    posterUrl: project.embedUrl ? '' : `./assets/video/posters/${id}.png`,
+    video: `./assets/video/${encodeURIComponent(group.folder)}/${encodeURIComponent(project.file)}`
+  };
+}));
 
 const translations = {
   ru: {
@@ -156,19 +160,12 @@ function createVideoControls() {
   time.className = 'video-time';
   time.textContent = '0:00 / 0:00';
 
-  const muteButton = document.createElement('button');
-  muteButton.type = 'button';
-  muteButton.className = 'video-control-button video-mute-button';
-  muteButton.textContent = '♪';
-  muteButton.setAttribute('aria-label', t('videoUnmute'));
-  muteButton.disabled = true;
-
   const volume = document.createElement('input');
   volume.className = 'video-volume';
   volume.type = 'range';
   volume.min = '0';
   volume.max = '100';
-  volume.value = '100';
+  volume.value = '0';
   volume.setAttribute('aria-label', language === 'ru' ? 'Громкость' : 'Volume');
   volume.disabled = true;
 
@@ -184,8 +181,9 @@ function createVideoControls() {
   status.setAttribute('aria-live', 'polite');
   status.hidden = true;
 
-  controls.append(playButton, seek, time, muteButton, volume, fullscreenButton, status);
+  controls.append(playButton, seek, time, volume, fullscreenButton, status);
   let player = null;
+  let lastNonzeroVolume = 100;
   let progressTimer = 0;
   let isSeeking = false;
   let isAdjustingVolume = false;
@@ -198,12 +196,14 @@ function createVideoControls() {
     playButton.textContent = isPlaying ? 'Ⅱ' : '▶';
     playButton.setAttribute('aria-label', t(isPlaying ? 'videoPause' : 'videoPlay'));
     const isMuted = player.isMuted();
-    muteButton.textContent = isMuted ? '♪' : '×';
-    muteButton.classList.toggle('is-muted', isMuted);
-    muteButton.setAttribute('aria-label', isMuted ? t('videoUnmute') : t('videoMute'));
-    muteButton.setAttribute('aria-pressed', String(!isMuted));
     const currentVolume = player.getVolume();
-    if (!isAdjustingVolume && Number.isFinite(currentVolume)) volume.value = String(currentVolume);
+    if (Number.isFinite(currentVolume) && currentVolume > 0) {
+      lastNonzeroVolume = currentVolume;
+    }
+    if (!isAdjustingVolume) {
+      if (isMuted) volume.value = '0';
+      else if (Number.isFinite(currentVolume)) volume.value = String(currentVolume);
+    }
     if (duration > 0 && !isSeeking) {
       seek.value = String(Math.round((currentTime / duration) * 1000));
       time.textContent = `${formatVideoTime(currentTime)} / ${formatVideoTime(duration)}`;
@@ -233,8 +233,12 @@ function createVideoControls() {
   };
   const toggleMute = () => {
     if (!player) return;
-    if (player.isMuted()) player.unMute();
-    else player.mute();
+    if (player.isMuted()) {
+      player.setVolume(lastNonzeroVolume);
+      player.unMute();
+    } else {
+      player.mute();
+    }
     update();
   };
   const toggleFullscreen = () => {
@@ -270,11 +274,11 @@ function createVideoControls() {
     const duration = player.getDuration();
     if (duration > 0) player.seekTo((Number(seek.value) / 1000) * duration, true);
   });
-  muteButton.addEventListener('click', toggleMute);
   volume.addEventListener('input', () => {
     if (!player) return;
     isAdjustingVolume = true;
     const level = Number(volume.value);
+    if (level > 0) lastNonzeroVolume = level;
     player.setVolume(level);
     if (level === 0) player.mute();
     else if (player.isMuted()) player.unMute();
@@ -299,7 +303,6 @@ function createVideoControls() {
       player = nextPlayer;
       playButton.disabled = false;
       seek.disabled = false;
-      muteButton.disabled = false;
       volume.disabled = false;
       status.hidden = true;
       update();
@@ -468,7 +471,17 @@ function renderProjects() {
       corner.className = 'project-corner';
       corner.innerHTML = '<span class="svg-arrow" aria-hidden="true"></span>';
       visual.append(art);
-      if (project.thumbnailUrl) {
+      if (project.posterUrl) {
+        const poster = document.createElement('img');
+        poster.className = 'project-poster';
+        poster.alt = '';
+        poster.loading = 'lazy';
+        poster.decoding = 'async';
+        poster.setAttribute('aria-hidden', 'true');
+        poster.addEventListener('error', () => poster.remove(), { once: true });
+        poster.src = project.posterUrl;
+        visual.append(poster);
+      } else if (project.thumbnailUrl) {
         const thumbnail = document.createElement('img');
         thumbnail.className = 'project-thumbnail';
         thumbnail.alt = '';
@@ -487,7 +500,8 @@ function renderProjects() {
         });
         thumbnail.src = thumbnailSources[thumbnailSourceIndex];
         visual.append(thumbnail);
-      } else if (!project.embedUrl) {
+      }
+      if (!project.embedUrl) {
         visual.append(makePreview(project));
       }
       visual.append(index, corner);
