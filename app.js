@@ -8,9 +8,9 @@ const ACCESS_PASSWORD_HASH = '6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c0
 
 // Прозрачные иллюстрации Вари подключаются здесь, когда будут готовы файлы.
 const ILLUSTRATIONS = {
-  hero: './assets/illustrations/hero-placeholder.png',
+  hero: './assets/illustrations/hero-placeholder.webp',
   about: '',
-  contact: './assets/illustrations/contact-placeholder.png',
+  contact: './assets/illustrations/contact-placeholder.webp',
   projects: {
     // '01': './assets/illustrations/project-01.webp'
   }
@@ -62,7 +62,7 @@ const projects = projectGroups.flatMap((group) => group.projects.map((project) =
     id,
     category: group.id,
     categoryName: group.label,
-    posterUrl: project.embedUrl ? '' : `./assets/video/posters/${id}.png`,
+    posterUrl: project.embedUrl ? '' : `./assets/video/posters/${id}.webp`,
     video: `./assets/video/${encodeURIComponent(group.folder)}/${encodeURIComponent(project.file)}`
   };
 }));
@@ -501,7 +501,7 @@ function renderProjects() {
         thumbnail.src = thumbnailSources[thumbnailSourceIndex];
         visual.append(thumbnail);
       }
-      if (!project.embedUrl) {
+      if (!project.embedUrl && !project.posterUrl) {
         visual.append(makePreview(project));
       }
       visual.append(index, corner);
