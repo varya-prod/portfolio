@@ -4,7 +4,7 @@
 const SHOWREEL_VIDEO = '';
 
 // Set a SHA-256 password hash here; this is only a casual-visitor gate on GitHub Pages.
-const ACCESS_PASSWORD_HASH = '6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b';
+const ACCESS_PASSWORD_HASH = '2fcf1b8dc47e0f72a5670012e1bf043816e3be8c056823a621c468f60658f322';
 
 // Прозрачные иллюстрации Вари подключаются здесь, когда будут готовы файлы.
 const ILLUSTRATIONS = {
