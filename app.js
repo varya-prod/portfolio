@@ -40,18 +40,18 @@ const projectGroups = [
       { file: 'komilfo.mp4', title: { ru: 'Комильфо', en: 'Komilfo' }, client: { ru: 'Nestlé', en: 'Nestlé' }, brand: { ru: 'Комильфо', en: 'Komilfo' }, role: { ru: 'Project Manager', en: 'Project Manager' }, scope: { ru: 'Управление сметой и таймингом, оптимизация производственных ресурсов продакшена и контроль соблюдения гайдов Клиента ', en: 'Managed communication with the brand manager, account manager and creative team. Ensured the producer’s revisions aligned with the brief approved by the client and creative team, and managed production schedules and timelines.' } },
     ]
   },
-  {
-    id: 'assistant', folder: 'PROD ASSISTANT',
-    label: { ru: 'КАМПАНИИ И СЕРИИ', en: 'CAMPAIGNS & SERIES' },
-    projects: [
-      { file: 'ViT_RailwayStation.mp4', title: { ru: 'Вкусно и Точка / Вокзал', en: 'ViT / Railway Station' }, client: { ru: 'Вкусно и Точка', en: 'Vkusno & Tochka' }, format: { ru: 'Рекламный ролик', en: 'Advertising film' }, role: { ru: 'Production Assistant', en: "Producer's Assistant" } },
-      { file: 'ViT_Mama.mp4', title: { ru: 'Вкусно и Точка / Мама', en: 'VIT / Mom' }, client: { ru: 'Вкусно и Точка', en: 'Vkusno & Tochka' }, format: { ru: 'Благотворительный рекламный ролик', en: 'Charity advertising film' }, role: { ru: 'Ассистент по актёрам', en: 'Talent Assistant' } },
-      { file: 'ViT_Papa.mp4', title: { ru: 'Вкусно и Точка / Папа', en: 'VIT / Dad' }, client: { ru: 'Вкусно и Точка', en: 'Vkusno & Tochka' }, format: { ru: 'Благотворительный рекламный ролик', en: 'Charity advertising film' }, role: { ru: 'Talent Assistant', en: 'Talent Assistant' } },
-      { file: 'Yubileynoye_Train.mp4', title: { ru: 'Юбилейное / В поезде', en: 'Yubileynoye / On the Train' }, client: { ru: 'Юбилейное', en: 'Yubileynoye' }, format: { ru: 'Рекламный ролик «Все мы из одного теста»', en: 'Advertising film: “We’re all cut from the same dough”' }, role: { ru: 'Ассистент продюсера', en: "Producer's Assistant" } },
-      { file: 'Yubileynoye_Kitchen.mp4', title: { ru: 'Юбилейное / На кухне', en: 'Yubileynoye / In the Kitchen' }, client: { ru: 'Юбилейное', en: 'Yubileynoye' }, format: { ru: 'Рекламный ролик «Все мы из одного теста»', en: 'Advertising film: “We’re all cut from the same dough”' }, role: { ru: 'Ассистент продюсера', en: "Producer's Assistant" } },
-      { file: 'Yubileynoye_Crossing.mp4', title: { ru: 'Юбилейное / На переезде', en: 'Yubileynoye / At the Crossing' }, client: { ru: 'Юбилейное', en: 'Yubileynoye' }, format: { ru: 'Рекламный ролик «Все мы из одного теста»', en: 'Advertising film: “We’re all cut from the same dough”' }, role: { ru: 'Ассистент продюсера', en: "Producer's Assistant" } }
-    ]
-  }
+  // {
+  //   id: 'assistant', folder: 'PROD ASSISTANT',
+  //   label: { ru: 'КАМПАНИИ И СЕРИИ', en: 'CAMPAIGNS & SERIES' },
+  //   projects: [
+  //     { file: 'ViT_RailwayStation.mp4', title: { ru: 'Вкусно и Точка / Вокзал', en: 'ViT / Railway Station' }, client: { ru: 'Вкусно и Точка', en: 'Vkusno & Tochka' }, format: { ru: 'Рекламный ролик', en: 'Advertising film' }, role: { ru: 'Production Assistant', en: "Producer's Assistant" } },
+  //     { file: 'ViT_Mama.mp4', title: { ru: 'Вкусно и Точка / Мама', en: 'VIT / Mom' }, client: { ru: 'Вкусно и Точка', en: 'Vkusno & Tochka' }, format: { ru: 'Благотворительный рекламный ролик', en: 'Charity advertising film' }, role: { ru: 'Ассистент по актёрам', en: 'Talent Assistant' } },
+  //     { file: 'ViT_Papa.mp4', title: { ru: 'Вкусно и Точка / Папа', en: 'VIT / Dad' }, client: { ru: 'Вкусно и Точка', en: 'Vkusno & Tochka' }, format: { ru: 'Благотворительный рекламный ролик', en: 'Charity advertising film' }, role: { ru: 'Talent Assistant', en: 'Talent Assistant' } },
+  //     { file: 'Yubileynoye_Train.mp4', title: { ru: 'Юбилейное / В поезде', en: 'Yubileynoye / On the Train' }, client: { ru: 'Юбилейное', en: 'Yubileynoye' }, format: { ru: 'Рекламный ролик «Все мы из одного теста»', en: 'Advertising film: “We’re all cut from the same dough”' }, role: { ru: 'Ассистент продюсера', en: "Producer's Assistant" } },
+  //     { file: 'Yubileynoye_Kitchen.mp4', title: { ru: 'Юбилейное / На кухне', en: 'Yubileynoye / In the Kitchen' }, client: { ru: 'Юбилейное', en: 'Yubileynoye' }, format: { ru: 'Рекламный ролик «Все мы из одного теста»', en: 'Advertising film: “We’re all cut from the same dough”' }, role: { ru: 'Ассистент продюсера', en: "Producer's Assistant" } },
+  //     { file: 'Yubileynoye_Crossing.mp4', title: { ru: 'Юбилейное / На переезде', en: 'Yubileynoye / At the Crossing' }, client: { ru: 'Юбилейное', en: 'Yubileynoye' }, format: { ru: 'Рекламный ролик «Все мы из одного теста»', en: 'Advertising film: “We’re all cut from the same dough”' }, role: { ru: 'Ассистент продюсера', en: "Producer's Assistant" } }
+  //   ]
+  // }
 ];
 
 let projectNumber = 0;
