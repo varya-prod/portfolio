@@ -143,7 +143,6 @@ function createVideoControls() {
   const playButton = document.createElement('button');
   playButton.type = 'button';
   playButton.className = 'video-control-button video-play-button';
-  playButton.textContent = '▶';
   playButton.setAttribute('aria-label', t('videoPlay'));
   playButton.disabled = true;
 
@@ -193,7 +192,7 @@ function createVideoControls() {
     const duration = player.getDuration();
     const currentTime = player.getCurrentTime();
     const isPlaying = player.getPlayerState() === 1;
-    playButton.textContent = isPlaying ? 'Ⅱ' : '▶';
+    playButton.classList.toggle('is-playing', isPlaying);
     playButton.setAttribute('aria-label', t(isPlaying ? 'videoPause' : 'videoPlay'));
     const isMuted = player.isMuted();
     const currentVolume = player.getVolume();
@@ -210,7 +209,7 @@ function createVideoControls() {
     }
   };
   const updateFullscreenLabel = () => {
-    const isFullscreen = document.fullscreenElement === dialogArt;
+    const isFullscreen = document.fullscreenElement === dialogArt || dialogArt.classList.contains('is-fullscreen');
     fullscreenButton.setAttribute('aria-label', t(isFullscreen ? 'videoExitFullscreen' : 'videoFullscreen'));
     if (dialog.open) {
       const cursorLayer = isFullscreen ? dialogArt : dialog;
@@ -243,19 +242,33 @@ function createVideoControls() {
   };
   const toggleFullscreen = () => {
     if (document.fullscreenElement === dialogArt) {
-      document.exitFullscreen().then(updateFullscreenLabel).catch(() => {
+      Promise.resolve(document.exitFullscreen()).then(updateFullscreenLabel).catch(() => {
         status.textContent = t('videoPlayerError');
         status.hidden = false;
       });
       return;
     }
+    if (dialogArt.classList.contains('is-fullscreen')) {
+      dialogArt.classList.remove('is-fullscreen');
+      updateFullscreenLabel();
+      return;
+    }
+    const enterCssFullscreen = () => {
+      dialogArt.classList.add('is-fullscreen');
+      updateFullscreenLabel();
+    };
     if (dialogArt.requestFullscreen) {
       dialogArt.append(cursor);
-      dialogArt.requestFullscreen().then(updateFullscreenLabel).catch(() => {
-        updateFullscreenLabel();
-        status.textContent = t('videoPlayerError');
-        status.hidden = false;
-      });
+      try {
+        Promise.resolve(dialogArt.requestFullscreen()).then(() => {
+          if (document.fullscreenElement === dialogArt) updateFullscreenLabel();
+          else enterCssFullscreen();
+        }).catch(enterCssFullscreen);
+      } catch {
+        enterCssFullscreen();
+      }
+    } else {
+      enterCssFullscreen();
     }
   };
 
@@ -333,6 +346,7 @@ function cleanupProjectDialog() {
   dialogNeedsCleanup = false;
   cleanupVideoPlayer();
   currentProject = null;
+  dialogArt.classList.remove('is-fullscreen');
   const media = dialog.querySelector('.dialog-video');
   if (media instanceof HTMLVideoElement) {
     media.pause();
@@ -535,6 +549,7 @@ function openProject(project) {
   currentProject = project;
   dialogNeedsCleanup = true;
   const copy = projectText(project);
+  dialogArt.classList.remove('is-fullscreen');
   cleanupVideoPlayer();
   const previousMedia = dialog.querySelector('.dialog-video');
   if (previousMedia instanceof HTMLVideoElement) previousMedia.pause();
@@ -945,6 +960,13 @@ window.addEventListener('wheel', (event) => {
 
 document.addEventListener('keydown', (event) => {
   if (!dialog.open || !currentVideoControls || event.repeat) return;
+  if (event.key === 'Escape' && (
+    document.fullscreenElement === dialogArt || dialogArt.classList.contains('is-fullscreen')
+  )) {
+    event.preventDefault();
+    currentVideoControls.toggleFullscreen();
+    return;
+  }
   const target = event.target;
   if (target instanceof HTMLElement && (target.isContentEditable || target.matches('input:not([type="range"]), textarea, select'))) return;
   const key = event.key.toLowerCase();
