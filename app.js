@@ -22,15 +22,19 @@ const projectGroups = [
   {
     id: 'festival', folder: 'FESTIVAL_&_VIP',
     label: { ru: 'СПЕЦПРОЕКТЫ', en: 'SPECIAL PROJECTS' },
+    agency: { ru: 'Родная речь', en: 'Rodnaya Rech' },
+    production: { ru: 're:studio', en: 're:studio' },
     projects: [
       { file: 'Здесь_будет_свет_Tele2_Родная_Речь.mp4', title: { ru: 'Здесь будет свет', en: 'There Will Be Light' }, client: { ru: 'Tele2 Kazakhstan', en: 'Tele2 Kazakhstan' }, year: '2026', format: { ru: 'Рекламный ролик', en: 'Advertising film' }, role: { ru: 'Продюсер постпродакшна', en: 'Post-production Producer' }, scope: { ru: 'Организация постпродакшна и координация команды из семи специалистов.', en: 'Managed the post-production workflow and coordinated a team of seven specialists.' }, collaborators: { ru: 'Совместно с CCO «Родной речи» Ильёй Прямиловым и исполнительными креативными директорами Михаилом Кудашкиным и Александром Мерзляковым.', en: 'In collaboration with Rodnaya Rech CCO Ilya Pryamilov and executive creative directors Mikhail Kudashkin and Alexander Merzlyakov.' }, award: 'CANNES LIONS / SHORTLIST', recognition: { ru: 'Cannes Lions 2026 — шорт-лист, PR / PR: Sectors; Red Apple 2026 — Гран-при в категории «Медиа»', en: 'Cannes Lions 2026 — shortlist, PR / PR: Sectors; Red Apple 2026 — Grand Prix in Media' }, sourceUrl: 'https://www.lovethework.com/en/work/entries/highlighted-by-data-787224', url: 'https://www.youtube.com/watch?v=NRqtUq1BRa4', embedUrl: 'https://www.youtube.com/embed/NRqtUq1BRa4?si=2cvAfECe3oCpYfTT&autoplay=1&mute=1&playsinline=1&rel=0', thumbnailUrl: 'https://img.youtube.com/vi/NRqtUq1BRa4/maxresdefault.jpg', thumbnailFallbackUrl: 'https://img.youtube.com/vi/NRqtUq1BRa4/hqdefault.jpg', description: { ru: 'Данные мобильной сети помогли определить городские места, которым не хватает освещения.', en: 'Mobile network data helped identify city areas in need of better lighting.' } },
       { file: 'vtb.mp4', title: { ru: 'ВТБ / Манифест', en: 'VTB / Manifesto' }, client: { ru: 'ВТБ', en: 'VTB' }, year: '2025', format: { ru: 'Рекламная компания', en: 'Campaign' }, role: { ru: 'Продюсер постпродакшна', en: 'Post-production Producer' }, scope: { ru: 'Координация постпродакшена имиджевого ролика для рекламной кампании ВТБ. Организация работы 2D-специалистов, монтажного и sound design-направлений. Адаптация производственного процесса в соответствии меняющемуся брифу, исходникам.', en: 'Coordinated post-production for a VTB brand film, organizing the 2D, editing, and sound design teams. Adapted the production workflow to evolving briefs, source materials, and other changing requirements.' }, collaborators: { ru: 'Совместно с CCO «Родной речи» Ильёй Прямиловым.', en: 'In collaboration with Rodnaya Rech CCO Ilya Pryamilov.' }, description: { ru: 'Ролик создан для рекламной компании, был презентован лично президенту банка и получил максимально положительный отзыв.', en: 'Created for a VTB advertising campaign, the film was presented personally to the bank’s president and received very positive feedback.' } },
-      { file: 'psb.mp4', title: { ru: 'ПСБ', en: 'PSB' }, client: { ru: 'ПСБ Банк', en: 'PSB Bank' }, year: '2026', format: { ru: 'Фестивальный рекламный кейс', en: 'Advertising case film for festival submissions' }, role: { ru: 'Продюсер постпродакшна со стороны агентства', en: 'Agency-side Post-production Producer' }, scope: { ru: 'Контроль внесения правок от креатива и Клиента, проверка финальных материалов на соответствие согласованным комментариям, ведение рабочей коммуникации с продакшеном Papaton, контроль вносимых правок на соответствие брифу.', en: 'Oversaw revisions requested by the creative team and the client, checked final materials against the approved feedback, managed day-to-day communication with Papation production, and ensured revisions stayed aligned with the brief.' } },
+      { file: 'psb.mp4', title: { ru: 'ПСБ', en: 'PSB' }, client: { ru: 'ПСБ Банк', en: 'PSB Bank' }, year: '2026', production: { ru: 'PAPATON STUDIO', en: 'PAPATON STUDIO' }, format: { ru: 'Фестивальный рекламный кейс', en: 'Advertising case film for festival submissions' }, role: { ru: 'Продюсер постпродакшна со стороны агентства', en: 'Agency-side Post-production Producer' }, scope: { ru: 'Контроль внесения правок от креатива и Клиента, проверка финальных материалов на соответствие согласованным комментариям, ведение рабочей коммуникации с продакшеном Papaton, контроль вносимых правок на соответствие брифу.', en: 'Oversaw revisions requested by the creative team and the client, checked final materials against the approved feedback, managed day-to-day communication with Papation production, and ensured revisions stayed aligned with the brief.' } },
     ]
   },
   {
     id: 'federal', folder: 'DIGITAL_TV_POST',
     label: { ru: 'ТВ И DIGITAL', en: 'TV & DIGITAL' },
+    agency: { ru: 'Родная речь', en: 'Rodnaya Rech' },
+    production: { ru: 're:studio', en: 're:studio' },
     projects: [
       { file: 'maggi.mp4', title: { ru: 'Maggi / Papyrus', en: 'Maggi / Papyrus' }, client: { ru: 'Бренд «Магги»', en: 'Maggi' }, role: { ru: 'Project Manager', en: 'Project Manager' }, scope: { ru: 'Продюсирование проекта при учащенном изменении исходников и брифа: оперативная перестройка продакшн процесса и координация команды до финальной сдачи ролика по ТТ.', en: 'Managed communication with the client’s brand manager, account manager and creative team. Ensured the producer’s revisions aligned with the client-approved brief, and managed production schedules and timelines.' } },
       { file: 'vit.mp4', title: { ru: ' ВИТ "Устойчивый успех"', en: 'VIT / Sustainable Success' }, client: { ru: 'Вкусно и Точка', en: 'Vkusno & Tochka' }, brand: { ru: 'ВИТ', en: 'VIT' }, role: { ru: 'Продюсер постпродакшна', en: 'Post-production Producer' }, scope: { ru: 'Координация работы монтажера и саунд продюсера, подготовка кейса по фестивальным стандартам ', en: 'Coordinated the editor’s work and the case film’s voice-over with DTV Production sound studio.' }, format: { ru: 'Фестивальный рекламный кейс для Red Apple', en: 'Advertising case film for the Red Apple festival' }},
@@ -62,6 +66,8 @@ const projects = projectGroups.flatMap((group) => group.projects.map((project) =
     id,
     category: group.id,
     categoryName: group.label,
+    agency: project.agency || group.agency,
+    production: project.production || group.production,
     posterUrl: project.embedUrl ? '' : `./assets/video/posters/${id}.webp`,
     video: `./assets/video/${encodeURIComponent(group.folder)}/${encodeURIComponent(project.file)}`
   };
@@ -92,6 +98,11 @@ const translations = {
     servicesKicker: '04 / WHAT I DO', servicesTagline: 'BUDGETS, TEAMS, DELIVERY', servicesTitleA: 'FROM BRIEF', servicesTitleB: 'TO MASTER.', serviceCreative: 'POST-PRODUCTION PRODUCING', serviceCreativeCopy: 'Budget estimates, schedules and production planning', serviceProduction: 'TEAM COORDINATION', serviceProductionCopy: 'Finding specialists, briefing teams and tracking deadlines', servicePost: 'PROJECT MANAGEMENT', servicePostCopy: 'Client communication, approvals, quality control and final delivery',
     contactKicker: '05 / GET IN TOUCH', contactTagline: 'FOR AGENCIES, STUDIOS AND EMPLOYERS', contactLeadA: 'OPEN TO PROJECTS', contactLeadB: 'AND FULL-TIME OPPORTUNITIES.', contactTitleA: 'LET’S', contactTitleB: 'DISCUSS', contactTitleC: 'A PROJECT', emailNote: 'PROJECTS, COLLABORATIONS AND FULL-TIME ROLES', backToTop: 'BACK TO TOP', footerNote: 'MADE WITH ATTENTION TO DETAIL', closeAria: 'Close', closeButton: 'CLOSE ✕', watchVideo: 'WATCH THE FILM', cannesCase: 'CANNES LIONS ENTRY', videoError: 'This video cannot play in your browser.', downloadVideo: 'DOWNLOAD VIDEO', clientLabel: 'CLIENT', brandLabel: 'BRAND', yearLabel: 'YEAR', formatLabel: 'FORMAT', roleLabel: 'ROLE', scopeLabel: 'SCOPE', collaboratorsLabel: 'COLLABORATORS', recognitionLabel: 'RECOGNITION', videoPlay: 'Play', videoPause: 'Pause', videoMute: 'Mute', videoUnmute: 'Unmute', videoSeek: 'Seek video', videoFullscreen: 'Fullscreen', videoExitFullscreen: 'Exit fullscreen', videoControlsAria: 'Video controls', videoPlayerError: 'Could not load the video player.'
   }
+};
+
+const projectFactLabels = {
+  ru: { agency: 'АГЕНТСТВО', production: 'ПРОДАКШН' },
+  en: { agency: 'AGENCY', production: 'PRODUCTION' }
 };
 
 let language = 'ru';
@@ -370,7 +381,9 @@ const projectText = (project) => ({
   role: project.role?.[language] || '',
   scope: project.scope?.[language] || '',
   collaborators: project.collaborators?.[language] || '',
-  recognition: project.recognition?.[language] || ''
+  recognition: project.recognition?.[language] || '',
+  agency: project.agency?.[language] || '',
+  production: project.production?.[language] || ''
 });
 
 const grid = document.querySelector('#project-grid');
@@ -645,6 +658,8 @@ function openProject(project) {
   [
     ['clientLabel', copy.client],
     ['brandLabel', copy.brand],
+    ['agency', copy.agency],
+    ['production', copy.production],
     ['yearLabel', project.year],
     ['formatLabel', copy.format],
     ['roleLabel', copy.role],
@@ -656,7 +671,7 @@ function openProject(project) {
     item.className = 'dialog-fact';
     if (label === 'scopeLabel' || label === 'collaboratorsLabel') item.classList.add('dialog-fact-scope');
     const caption = document.createElement('small');
-    caption.textContent = t(label);
+    caption.textContent = projectFactLabels[language][label] || t(label);
     const detail = document.createElement('strong');
     detail.textContent = value;
     item.append(caption, detail);
