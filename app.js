@@ -574,43 +574,38 @@ function openProject(project) {
     iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
     iframe.referrerPolicy = 'strict-origin-when-cross-origin';
     iframe.allowFullscreen = true;
-    if (document.documentElement.classList.contains('has-custom-cursor')) {
-      const playerUrl = new URL(project.embedUrl);
-      playerUrl.searchParams.set('enablejsapi', '1');
-      playerUrl.searchParams.set('controls', '0');
-      if (['http:', 'https:'].includes(window.location.protocol)) playerUrl.searchParams.set('origin', window.location.origin);
-      iframe.id = 'youtube-player';
-      iframe.classList.add('dialog-embed-custom');
-      iframe.src = playerUrl.toString();
-      currentVideoControls = createVideoControls();
-      const controls = currentVideoControls;
-      const requestId = youtubeRequestId;
-      dialogArt.append(iframe, controls.element);
-      loadYouTubeApi().then((youtubeApi) => {
-        if (requestId !== youtubeRequestId || !dialog.open) return;
-        currentYoutubePlayer = new youtubeApi.Player(iframe.id, {
-          events: {
-            onReady: (event) => {
-              if (requestId === youtubeRequestId) controls.setPlayer(event.target);
-            },
-            onStateChange: () => {
-              if (requestId === youtubeRequestId) controls.update?.();
-            },
-            onError: (event) => {
-              if (requestId === youtubeRequestId) controls.setError(t('videoError'));
-              console.error('YouTube player error:', event.data);
-            }
+    const playerUrl = new URL(project.embedUrl);
+    playerUrl.searchParams.set('enablejsapi', '1');
+    playerUrl.searchParams.set('controls', '0');
+    if (['http:', 'https:'].includes(window.location.protocol)) playerUrl.searchParams.set('origin', window.location.origin);
+    iframe.id = 'youtube-player';
+    iframe.classList.add('dialog-embed-custom');
+    iframe.src = playerUrl.toString();
+    currentVideoControls = createVideoControls();
+    const controls = currentVideoControls;
+    const requestId = youtubeRequestId;
+    dialogArt.append(iframe, controls.element);
+    loadYouTubeApi().then((youtubeApi) => {
+      if (requestId !== youtubeRequestId || !dialog.open) return;
+      currentYoutubePlayer = new youtubeApi.Player(iframe.id, {
+        events: {
+          onReady: (event) => {
+            if (requestId === youtubeRequestId) controls.setPlayer(event.target);
+          },
+          onStateChange: () => {
+            if (requestId === youtubeRequestId) controls.update?.();
+          },
+          onError: (event) => {
+            if (requestId === youtubeRequestId) controls.setError(t('videoError'));
+            console.error('YouTube player error:', event.data);
           }
-        });
-      }).catch((error) => {
-        if (requestId !== youtubeRequestId) return;
-        console.error(error);
-        controls.setError(t('videoPlayerError'));
+        }
       });
-    } else {
-      iframe.src = project.embedUrl;
-      dialogArt.append(iframe);
-    }
+    }).catch((error) => {
+      if (requestId !== youtubeRequestId) return;
+      console.error(error);
+      controls.setError(t('videoPlayerError'));
+    });
   } else {
     const video = document.createElement('video');
     video.className = 'dialog-video';
@@ -618,6 +613,7 @@ function openProject(project) {
     video.controls = false;
     video.muted = true;
     video.playsInline = true;
+    video.setAttribute('webkit-playsinline', '');
     video.preload = 'metadata';
     video.setAttribute('aria-label', copy.title);
     currentVideoControls = createVideoControls();
